@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #605f59; -webkit-text-stroke: #605f59}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #605f59; -webkit-text-stroke: #605f59}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #605f59; -webkit-text-stroke: #605f59; min-height: 13.0px}
+    span.s1 {font-kerning: none; background-color: #ffffff}
+    span.s2 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="ru"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p2"><span class="s2">Show less</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Городские квесты&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>* { margin: 0; padding: 0; box-sizing: border-box; }</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #0d0d14;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #e2e2f0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>min-height: 100vh;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding-bottom: 40px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Header */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.header {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #13131e;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 18px 20px 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #1f1f30;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: sticky;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>top: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>z-index: 100;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>gap: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.header-icon {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 38px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 38px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #6366f1, #8b5cf6);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-shrink: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.header-text h1 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 17px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #fff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>letter-spacing: -0.3px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.header-text p {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #50506e;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 1px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Content */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.content {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 24px 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 480px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0 auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Section label */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.section-label {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>gap: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.section-dot {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 7px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 7px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-shrink: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.dot-active {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #4ade80;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 8px rgba(74, 222, 128, 0.8);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>animation: glow 1.8s ease-in-out infinite;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@keyframes glow {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>0%, 100% { opacity: 1; box-shadow: 0 0 8px rgba(74, 222, 128, 0.8); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>50% { opacity: 0.5; box-shadow: 0 0 4px rgba(74, 222, 128, 0.3); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.dot-upcoming { background: #6366f1; }</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.section-title {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 11px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>letter-spacing: 1.2px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #50506e;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.section { margin-bottom: 32px; }</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Game Card */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.game-card {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #13131e;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 1px solid #1e1e2e;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: relative;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transition: border-color 0.2s, transform 0.15s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.game-card:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-color: #2d2d46;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transform: translateY(-2px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Top accent line */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.game-card::before {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>content: '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: absolute;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>top: 0; left: 0; right: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 2px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-active::before {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(90deg, #4ade80, #22d3ee);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-upcoming::before {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(90deg, #6366f1, #a855f7);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Active badge */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.live-badge {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: inline-flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>gap: 5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: rgba(74, 222, 128, 0.12);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #4ade80;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 3px 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>letter-spacing: 0.8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(74, 222, 128, 0.2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.live-dot {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #4ade80;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>animation: glow 1.5s infinite;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Game name */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.game-name {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #f0f0fa;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>line-height: 1.3;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>letter-spacing: -0.2px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Meta rows */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.meta-row {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>gap: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 13.5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #7070a0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 6px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.meta-row:last-child { margin-bottom: 0; }</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.meta-icon {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 13px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-shrink: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Teams link */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.teams-link {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #818cf8;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-decoration: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 500;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom: 1px dashed rgba(129, 140, 248, 0.35);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transition: color 0.15s, border-color 0.15s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 13.5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: inherit;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.teams-link:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #a5b4fc;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom-color: rgba(165, 180, 252, 0.6);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Countdown */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.countdown {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>gap: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: rgba(99, 102, 241, 0.08);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(99, 102, 241, 0.18);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 9px 13px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 13px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.countdown.cd-active {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: rgba(74, 222, 128, 0.08);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-color: rgba(74, 222, 128, 0.2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.countdown.cd-urgent {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: rgba(239, 68, 68, 0.08);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-color: rgba(239, 68, 68, 0.2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.cd-label {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #50506e;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 500;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>white-space: nowrap;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.cd-value {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 13.5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #818cf8;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-variant-numeric: tabular-nums;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>letter-spacing: -0.3px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.countdown.cd-active .cd-value { color: #4ade80; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.countdown.cd-urgent .cd-value { color: #f87171; }</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.cd-icon { font-size: 13px; flex-shrink: 0; }</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* ─── Popup ─── */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.overlay {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: fixed;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>inset: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: rgba(0, 0, 0, 0.65);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>backdrop-filter: blur(6px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>-webkit-backdrop-filter: blur(6px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>z-index: 1000;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: flex-end;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 0 0 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.overlay.open { display: flex; }</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.popup {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #1a1a28;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 24px 24px 20px 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: calc(100% - 32px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 480px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-height: 75vh;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-direction: column;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 1px solid #26263a;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>animation: slideUp 0.28s cubic-bezier(0.34, 1.1, 0.64, 1);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@keyframes slideUp {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>from { transform: translateY(50px); opacity: 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>to { transform: translateY(0); opacity: 1; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.popup-handle {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 36px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #2e2e45;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 2px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 12px auto 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-shrink: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.popup-head {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 16px 20px 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #22223a;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: flex-start;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: space-between;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-shrink: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.popup-game-title {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 11px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 600;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #50506e;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>letter-spacing: 0.8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 3px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.popup-heading {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 17px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #f0f0fa;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.popup-close {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 30px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 30px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #26263a;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #7070a0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-shrink: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 2px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transition: background 0.15s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.popup-close:hover { background: #32324a; }</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.popup-body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow-y: auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 8px 0 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.team-item {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>gap: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 11px 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #1e1e30;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transition: background 0.1s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.team-item:last-child { border-bottom: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.team-item:hover { background: rgba(99, 102, 241, 0.05); }</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.team-num {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 26px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 26px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 7px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #22223a;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #50506e;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-shrink: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.team-name-text {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 500;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #dcdcf0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="header"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="header-icon"&gt;🗺&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="header-text"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Городские квесты&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Активные и предстоящие игры&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="content"&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- ── ACTIVE ── --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section-label"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="section-dot dot-active"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="section-title"&gt;Активные игры&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="game-card card-active"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="live-badge"&gt;&lt;div class="live-dot"&gt;&lt;/div&gt;Идёт сейчас&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="game-name"&gt;Ночной город: Тайны улиц&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="meta-row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="meta-icon"&gt;📅&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span&gt;10 марта 2026, 19:00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="meta-row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="meta-icon"&gt;👥&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button class="teams-link" onclick="openPopup('active')"&gt;Участвуют — 7 команд&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="countdown cd-active"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="cd-icon"&gt;🟢&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="cd-label"&gt;Игра идёт —&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="cd-value" id="timer-active"&gt;1 час 23 минуты&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- ── UPCOMING ── --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section-label"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="section-dot dot-upcoming"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="section-title"&gt;Предстоящие игры&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Game 1 — far (days) --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="game-card card-upcoming"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="game-name"&gt;Заброшенный квартал&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="meta-row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="meta-icon"&gt;📅&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span id="date-far"&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="meta-row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="meta-icon"&gt;👥&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button class="teams-link" onclick="openPopup('quest1')"&gt;Участвуют — 5 команд&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="countdown" id="cd-far"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="cd-icon"&gt;⏳&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="cd-label"&gt;До игры —&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="cd-value" id="timer-far"&gt;—&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Game 2 — &lt; 3 hours --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="game-card card-upcoming"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="game-name"&gt;Призраки старого города&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="meta-row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="meta-icon"&gt;📅&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span id="date-mid"&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="meta-row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="meta-icon"&gt;👥&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button class="teams-link" onclick="openPopup('quest2')"&gt;Участвуют — 3 команды&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="countdown" id="cd-mid"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="cd-icon"&gt;⏳&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="cd-label"&gt;До игры —&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="cd-value" id="timer-mid"&gt;—&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Game 3 — &lt; 10 minutes --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="game-card card-upcoming"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="game-name"&gt;Секретная миссия: Центр&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="meta-row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="meta-icon"&gt;📅&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span id="date-near"&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="meta-row"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="meta-icon"&gt;👥&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button class="teams-link" onclick="openPopup('quest3')"&gt;Участвуют — 12 команд&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="countdown" id="cd-near"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="cd-icon"&gt;🔴&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="cd-label"&gt;До игры —&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="cd-value" id="timer-near"&gt;—&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">&lt;!-- ── POPUP ── --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="overlay" id="overlay" onclick="overlayClick(event)"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="popup"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="popup-handle"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="popup-head"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="popup-game-title" id="pop-subtitle"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="popup-heading" id="pop-title"&gt;Участвующие команды&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button class="popup-close" onclick="closePopup()"&gt;✕&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="popup-body"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul id="pop-list" style="list-style:none"&gt;&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">&lt;script&gt;</span></p>
+<p class="p1"><span class="s1">// ── Data ──────────────────────────────────────────────</span></p>
+<p class="p1"><span class="s1">const teams = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>active: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>game: 'Ночной город: Тайны улиц',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>list: ['Ночные охотники', 'Команда Альфа', 'Неудержимые', 'Городские детективы', 'Тени города', 'Квест-мастера', 'Дикий запад']</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>quest1: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>game: 'Заброшенный квартал',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>list: ['Команда Буря', 'Первопроходцы', 'Загадочники', 'Следопыты', 'Ночные волки']</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>quest2: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>game: 'Призраки старого города',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>list: ['Команда Призрак', 'Искатели тайн', 'Ночные стражи']</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>quest3: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>game: 'Секретная миссия: Центр',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>list: ['Агенты 007', 'Тайный отдел', 'Команда X', 'Чёрная пантера', 'Стальные нервы', 'Охотники за тенью', 'Квест-спецназ', 'Городской патруль', 'Ночная смена', 'Туманные следы', 'Команда Сокол', 'Дерзкие умы']</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1">};</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">// ── Set target times ──────────────────────────────────</span></p>
+<p class="p1"><span class="s1">const now = new Date();</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">// Active game started 1h 23m ago</span></p>
+<p class="p1"><span class="s1">const activeStart = new Date(now.getTime() - (83 * 60 * 1000));</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">// Far game: 10 days 2 hours from now</span></p>
+<p class="p1"><span class="s1">const targetFar = new Date(now.getTime() + ((10 * 24 + 2) * 3600 * 1000));</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">// Mid game: 2h 37m from now (&lt; 3 hours)</span></p>
+<p class="p1"><span class="s1">const targetMid = new Date(now.getTime() + ((2 * 3600 + 37 * 60) * 1000));</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">// Near game: 9m 45s from now (&lt; 10 minutes)</span></p>
+<p class="p1"><span class="s1">const targetNear = new Date(now.getTime() + ((9 * 60 + 45) * 1000));</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">// Format display dates</span></p>
+<p class="p1"><span class="s1">function fmtDate(d) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>return d.toLocaleString('ru-RU', { day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' });</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">document.getElementById('date-far').textContent<span class="Apple-converted-space">  </span>= fmtDate(targetFar);</span></p>
+<p class="p1"><span class="s1">document.getElementById('date-mid').textContent<span class="Apple-converted-space">  </span>= fmtDate(targetMid);</span></p>
+<p class="p1"><span class="s1">document.getElementById('date-near').textContent = fmtDate(targetNear);</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">// ── Plurals ───────────────────────────────────────────</span></p>
+<p class="p1"><span class="s1">const p = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>days:<span class="Apple-converted-space">    </span>n =&gt; [,'день','дня','дней'][n%10===1&amp;&amp;n%100!==11?1:[2,3,4].includes(n%10)&amp;&amp;![12,13,14].includes(n%100)?2:3],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>hours: <span class="Apple-converted-space">  </span>n =&gt; [,'час','часа','часов'][n%10===1&amp;&amp;n%100!==11?1:[2,3,4].includes(n%10)&amp;&amp;![12,13,14].includes(n%100)?2:3],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>minutes: n =&gt; [,'минута','минуты','минут'][n%10===1&amp;&amp;n%100!==11?1:[2,3,4].includes(n%10)&amp;&amp;![12,13,14].includes(n%100)?2:3],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>seconds: n =&gt; [,'секунда','секунды','секунд'][n%10===1&amp;&amp;n%100!==11?1:[2,3,4].includes(n%10)&amp;&amp;![12,13,14].includes(n%100)?2:3],</span></p>
+<p class="p1"><span class="s1">};</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">function formatCountdown(ms) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>if (ms &lt;= 0) return 'начинается!';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const s <span class="Apple-converted-space">  </span>= Math.floor(ms / 1000);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const sec = s % 60;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const min = Math.floor(s / 60) % 60;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const hrs = Math.floor(s / 3600) % 24;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const day = Math.floor(s / 86400);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const totalMin = Math.floor(s / 60);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const totalHrs = s / 3600;</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>if (totalMin &lt; 10) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>return `${min} ${p.minutes(min)} ${sec} ${p.seconds(sec)}`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>} else if (totalHrs &lt; 3) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>return hrs &gt; 0</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>? `${hrs} ${p.hours(hrs)} ${min} ${p.minutes(min)}`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>: `${min} ${p.minutes(min)}`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>} else if (day &gt; 0) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>return `${day} ${p.days(day)} ${hrs} ${p.hours(hrs)}`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>return `${hrs} ${p.hours(hrs)} ${min} ${p.minutes(min)}`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">function formatElapsed(ms) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const s <span class="Apple-converted-space">  </span>= Math.floor(ms / 1000);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const min = Math.floor(s / 60) % 60;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const hrs = Math.floor(s / 3600);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>if (hrs &gt; 0) return `${hrs} ${p.hours(hrs)} ${min} ${p.minutes(min)}`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>return `${min} ${p.minutes(min)}`;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">// ── Timer loop ────────────────────────────────────────</span></p>
+<p class="p1"><span class="s1">function tick() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const now = new Date();</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Active (elapsed)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById('timer-active').textContent = formatElapsed(now - activeStart);</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Far</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const dFar = targetFar - now;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById('timer-far').textContent = formatCountdown(dFar);</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Mid</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const dMid = targetMid - now;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const cdMid = document.getElementById('cd-mid');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById('timer-mid').textContent = formatCountdown(dMid);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const midMin = Math.floor(dMid / 1000 / 60);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>cdMid.className = 'countdown ' + (midMin &lt; 10 ? 'cd-urgent' : '');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>cdMid.querySelector('.cd-icon').textContent = midMin &lt; 10 ? '🔴' : '⏳';</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Near</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const dNear = targetNear - now;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById('timer-near').textContent = formatCountdown(dNear);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">tick();</span></p>
+<p class="p1"><span class="s1">setInterval(tick, 1000);</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">// ── Popup ─────────────────────────────────────────────</span></p>
+<p class="p1"><span class="s1">function openPopup(key) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const d = teams[key];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById('pop-subtitle').textContent = d.game;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById('pop-title').textContent = `Участвующие команды`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById('pop-list').innerHTML = d.list</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.map((t, i) =&gt; `&lt;li class="team-item"&gt;&lt;div class="team-num"&gt;${i+1}&lt;/div&gt;&lt;div class="team-name-text"&gt;${t}&lt;/div&gt;&lt;/li&gt;`)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.join('');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById('overlay').classList.add('open');</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">function closePopup() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById('overlay').classList.remove('open');</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p3"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1">function overlayClick(e) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>if (e.target === document.getElementById('overlay')) closePopup();</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+</body>
+</html>
